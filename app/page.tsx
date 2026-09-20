@@ -85,6 +85,17 @@ export default function Home() {
           </div>
         </section>
 
+        <section className="paper-panel">
+          <div className="wrap case-grid">
+            <div><p className="eyebrow">SELECTED JOURNAL PROJECT</p><h2>Ojukwu Journal of Psychological Services</h2></div>
+            <div>
+              <p>We developed and support the digital publishing infrastructure for the <strong>Ojukwu Journal of Psychological Services (OJPS)</strong>, an academic journal using Open Journal Systems.</p>
+              <p>The work includes journal platform development and maintenance, publishing workflows, article metadata, DOI and indexing-related technical support, and the digital infrastructure required for ongoing scholarly publication.</p>
+              <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit the journal →</a>
+            </div>
+          </div>
+        </section>
+
         <section className="process-section">
           <div className="wrap">
             <div className="section-head"><div><p className="eyebrow">HOW WE WORK</p><h2>Understand the workflow. Build the right system.</h2></div></div>
