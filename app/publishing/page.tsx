@@ -28,7 +28,8 @@ export default function PublishingPage() {
       <div>
         <p>We developed and support the digital publishing infrastructure for the Ojukwu Journal of Psychological Services (OJPS), an academic journal powered by Open Journal Systems.</p>
         <p>Our technical work covers the journal platform, publishing workflows, article metadata, DOI and indexing-related technical support, and ongoing digital publishing infrastructure.</p>
-        <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit OJPS →</a>
+        <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit OJPS journal →</a>
+        <a className="secondary-link" href="https://ojs.psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Open OJPS OJS platform →</a>
       </div>
     </div></section>
     <section className="paper-panel"><div className="wrap two-column"><div><p className="eyebrow">OUR VIEW</p><h2>Editorial independence remains human.</h2></div><p>Technology should make publishing easier to operate without taking editorial authority away from editors, reviewers or scholarly institutions.</p></div></section>
