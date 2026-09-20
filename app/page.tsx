@@ -1,348 +1,110 @@
-const services = [
-  {
-    number: "01",
-    title: "Journal Platform & OJS",
-    description:
-      "Deploy, configure, customize and maintain professional Open Journal Systems platforms for new and established academic journals.",
-  },
-  {
-    number: "02",
-    title: "Editorial Workflow Automation",
-    description:
-      "Reduce repetitive editorial work with automation across manuscript submission, peer review, revision, production and publication.",
-  },
-  {
-    number: "03",
-    title: "Journal Hosting & Infrastructure",
-    description:
-      "Reliable technical infrastructure for academic journals, including domains, SSL, databases, backups, performance and security.",
-  },
-  {
-    number: "04",
-    title: "Research & Publishing Technology",
-    description:
-      "Build practical software tools that help researchers, editors and institutions manage scholarly publishing more efficiently.",
-  },
-  {
-    number: "05",
-    title: "Metadata & Discoverability",
-    description:
-      "Improve journal metadata, article structure, indexing readiness, persistent identifiers and technical discoverability.",
-  },
-  {
-    number: "06",
-    title: "AI-Powered Publishing Automation",
-    description:
-      "Apply responsible AI and software automation to repetitive publishing and research workflows while keeping editorial decisions with people.",
-  },
-];
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 
-const audiences = [
-  {
-    title: "Researchers & Lecturers",
-    text: "Technology and publishing support for researchers who need professional platforms for disseminating scholarly work.",
-  },
-  {
-    title: "Journal Editors",
-    text: "Modern tools for managing submissions, reviewers, revisions, editorial workflows and publication operations.",
-  },
-  {
-    title: "Universities & Institutions",
-    text: "Institutional journal infrastructure designed to support departments, faculties, research centres and scholarly communities.",
-  },
-  {
-    title: "Independent Publishers",
-    text: "Launch and operate professional academic journals with the technical foundation required for long-term growth.",
-  },
-];
-
-const process = [
-  {
-    title: "Understand",
-    text: "We first understand your journal, research workflow, audience, publishing model and technical requirements.",
-  },
-  {
-    title: "Build",
-    text: "We configure or develop the appropriate publishing infrastructure, software and automation around your needs.",
-  },
-  {
-    title: "Connect",
-    text: "We integrate domains, email, metadata, identifiers, analytics and other services required by your publishing workflow.",
-  },
-  {
-    title: "Support",
-    text: "We provide ongoing technical support, improvements, maintenance and automation as your journal or institution grows.",
-  },
+const capabilities = [
+  ["01","AI & Machine Learning","Practical AI/ML systems for research, text intelligence, data pipelines and decision-support workflows.","/ai-ml"],
+  ["02","Publishing Technology","OJS development, journal hosting, metadata, DOI workflows and technical publishing infrastructure.","/publishing"],
+  ["03","Workflow Automation","Python, APIs and automation that connect repetitive operational processes into dependable software.","/automation"],
+  ["04","Custom Solutions","Technology designed around the specific workflow, data and infrastructure of your organization.","/solutions"],
 ];
 
 export default function Home() {
   return (
-    <main>
-      <header className="site-header">
-        <div className="wrap header-inner">
-          <a className="wordmark" href="/">
-            ONYTECH <span>JOURNALHUB</span>
-          </a>
-
-          <nav className="site-nav" aria-label="Main navigation">
-            <a href="#services">Services</a>
-            <a href="#solutions">Solutions</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
-
-      <section className="hero">
-        <div className="wrap hero-grid">
-          <div>
-            <p className="eyebrow">ONYITECH JOURNALHUB LTD</p>
-
-            <h1>
-              Digital infrastructure for modern academic publishing.
-            </h1>
-
-            <p className="lede">
-              We help researchers, lecturers, journal editors, universities
-              and publishers build better systems for scholarly publishing —
-              from OJS platforms and journal hosting to editorial automation
-              and research technology.
-            </p>
-
-            <div className="cta-row">
-              <a className="btn-primary" href="#contact">
-                Discuss your journal
-              </a>
-
-              <a className="secondary-link" href="#services">
-                Explore our services →
-              </a>
-            </div>
-          </div>
-
-          <div className="hero-card">
-            <p className="card-label">THE PUBLISHING WORKFLOW</p>
-
-            <h2>From manuscript to published research.</h2>
-
-            <div className="workflow">
-              <div>
-                <span>01</span>
-                <strong>Submission</strong>
-              </div>
-
-              <div>
-                <span>02</span>
-                <strong>Peer Review</strong>
-              </div>
-
-              <div>
-                <span>03</span>
-                <strong>Revision</strong>
-              </div>
-
-              <div>
-                <span>04</span>
-                <strong>Production</strong>
-              </div>
-
-              <div>
-                <span>05</span>
-                <strong>Publication</strong>
+    <>
+      <SiteHeader />
+      <main>
+        <section className="hero">
+          <div className="wrap hero-grid">
+            <div>
+              <p className="eyebrow">AI · ML · PUBLISHING · AUTOMATION</p>
+              <h1>Intelligent technology for research and real-world workflows.</h1>
+              <p className="lede">Onyitech JournalHub Ltd builds AI/ML software, publishing infrastructure and workflow automation for journals, research organizations and teams that need practical digital systems.</p>
+              <div className="cta-row">
+                <a className="btn-primary" href="/contact">Start a project</a>
+                <a className="secondary-link" href="/solutions">Explore solutions →</a>
               </div>
             </div>
-
-            <p className="card-footer">
-              Technology that supports editors — without replacing editorial
-              judgment.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="intro" id="about">
-        <div className="wrap intro-grid">
-          <div>
-            <p className="eyebrow">WHAT WE DO</p>
-            <h2>We build the technology behind scholarly communication.</h2>
-          </div>
-
-          <div>
-            <p>
-              Academic publishing increasingly depends on reliable digital
-              infrastructure. A journal needs more than a website: it needs
-              structured workflows, secure hosting, metadata, editorial
-              systems and dependable technical support.
-            </p>
-
-            <p>
-              Onyitech JournalHub Ltd brings these pieces together into
-              practical publishing technology for journals and research
-              communities.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="services">
-        <div className="wrap">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">OUR CAPABILITIES</p>
-              <h2>Publishing technology built around your workflow.</h2>
-            </div>
-
-            <p className="section-note">01 — 06</p>
-          </div>
-
-          <div className="services-grid">
-            {services.map((service) => (
-              <article className="service-card" key={service.number}>
-                <span className="service-number">{service.number}</span>
-                <h3>{service.title}</h3>
-                <p>{service.description}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="audience-section" id="solutions">
-        <div className="wrap">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">WHO WE SERVE</p>
-              <h2>Built for the people who move research forward.</h2>
-            </div>
-          </div>
-
-          <div className="audience-grid">
-            {audiences.map((audience) => (
-              <article className="audience-card" key={audience.title}>
-                <h3>{audience.title}</h3>
-                <p>{audience.text}</p>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="case-study">
-        <div className="wrap case-grid">
-          <div>
-            <p className="eyebrow">OUR APPROACH</p>
-            <h2>
-              Technology should make scholarly publishing more manageable.
-            </h2>
-          </div>
-
-          <div>
-            <p>
-              We combine publishing knowledge with software engineering to
-              create systems that fit real editorial environments.
-            </p>
-
-            <p>
-              Our work can include OJS configuration, custom development,
-              automation, hosting infrastructure, metadata management and
-              research-focused software.
-            </p>
-
-            <p>
-              The goal is simple: give scholarly communities dependable
-              technology so that researchers and editors can focus on the
-              work that matters.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section className="process-section">
-        <div className="wrap">
-          <div className="section-head">
-            <div>
-              <p className="eyebrow">HOW WE WORK</p>
-              <h2>A practical path from idea to working infrastructure.</h2>
-            </div>
-          </div>
-
-          <div className="process">
-            {process.map((step, index) => (
-              <div className="process-step" key={step.title}>
-                <span>{String(index + 1).padStart(2, "0")}</span>
-
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.text}</p>
-                </div>
+            <div className="hero-card">
+              <p className="card-label">OUR TECHNOLOGY STACK</p>
+              <h2>Software that connects intelligence with operations.</h2>
+              <div className="workflow">
+                <div><span>01</span><strong>AI / ML</strong></div>
+                <div><span>02</span><strong>Python &amp; APIs</strong></div>
+                <div><span>03</span><strong>Publishing Systems</strong></div>
+                <div><span>04</span><strong>Automation</strong></div>
+                <div><span>05</span><strong>Cloud Infrastructure</strong></div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="contact-section" id="contact">
-        <div className="wrap contact-grid">
-          <div>
-            <p className="eyebrow">START A CONVERSATION</p>
-
-            <h2>
-              Building a journal, improving an existing OJS platform, or
-              automating your publishing workflow?
-            </h2>
-
-            <p>
-              Tell us what you are trying to build. We can discuss the
-              publishing workflow, technical requirements and the right
-              infrastructure for your project.
-            </p>
-
-            <a
-              className="btn-primary"
-              href="mailto:onyitechideas@gmail.com"
-            >
-              Contact Onyitech JournalHub
-            </a>
-          </div>
-
-          <div className="contact-details">
-            <div>
-              <span>COMPANY</span>
-              Onyitech JournalHub Ltd
-            </div>
-
-            <div>
-              <span>EMAIL</span>
-              <a href="mailto:onyitechideas@gmail.com">
-                onyitechideas@gmail.com
-              </a>
-            </div>
-
-            <div>
-              <span>FOCUS</span>
-              Academic Publishing · OJS · Automation · Research Technology
-            </div>
-
-            <div>
-              <span>LOCATION</span>
-              Nigeria · Serving research communities globally
+              <p className="card-footer">Built to support people and workflows — not replace human responsibility.</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <footer>
-        <div className="wrap footer-inner">
-          <div>
-            <strong>Onyitech JournalHub Ltd</strong>
-            <p>Academic publishing technology and research infrastructure.</p>
+        <section className="intro">
+          <div className="wrap intro-grid">
+            <div><p className="eyebrow">WHAT WE DO</p><h2>Where AI engineering meets publishing technology.</h2></div>
+            <div>
+              <p>We develop software at the intersection of machine learning, automation and scholarly communication. Our publishing work includes OJS platforms and journal infrastructure, while our engineering work extends to Python applications, APIs, data workflows and intelligent systems.</p>
+              <p>The result is technology built around a real operational problem: a journal that needs better infrastructure, a team that needs automation, or an organization that needs an AI-enabled workflow.</p>
+            </div>
           </div>
+        </section>
 
-          <div>
-            © {new Date().getFullYear()} Onyitech JournalHub Ltd
+        <section id="services">
+          <div className="wrap">
+            <div className="section-head"><div><p className="eyebrow">CAPABILITIES</p><h2>Four areas, one engineering approach.</h2></div><p className="section-note">01 — 04</p></div>
+            <div className="services-grid">
+              {capabilities.map(([number,title,description,href]) => (
+                <a className="service-card service-link-card" href={href} key={number}>
+                  <span className="service-number">{number}</span><h3>{title}</h3><p>{description}</p><span className="card-arrow">Explore →</span>
+                </a>
+              ))}
+            </div>
           </div>
-        </div>
-      </footer>
-    </main>
+        </section>
+
+        <section className="audience-section" id="solutions">
+          <div className="wrap">
+            <div className="section-head"><div><p className="eyebrow">WHO WE SERVE</p><h2>Technology for research-driven organizations.</h2></div></div>
+            <div className="audience-grid">
+              <article className="audience-card"><h3>Journal Publishers</h3><p>OJS platforms, editorial workflows, metadata, hosting and technical publishing support.</p></article>
+              <article className="audience-card"><h3>Universities &amp; Research Centres</h3><p>Digital infrastructure and automation for departments, faculties and scholarly communities.</p></article>
+              <article className="audience-card"><h3>Editorial Teams</h3><p>Tools that reduce repetitive coordination while keeping editorial decisions with people.</p></article>
+              <article className="audience-card"><h3>Organizations</h3><p>Python, API and AI/ML solutions for structured operational and research workflows.</p></article>
+            </div>
+          </div>
+        </section>
+
+        <section className="case-study">
+          <div className="wrap case-grid">
+            <div><p className="eyebrow">R&amp;D</p><h2>Pillar AI: exploring intelligent, modular systems.</h2></div>
+            <div>
+              <p>Pillar AI is an R&amp;D project exploring a multi-layered architecture that combines machine learning, technical analysis, blockchain intelligence, sentiment signals and risk controls.</p>
+              <p>It reflects our engineering interest in integrating heterogeneous data sources, model pipelines and automated decision-support components. It is presented as an engineering and research project, not as a claim of guaranteed financial performance.</p>
+              <a className="secondary-link" href="/rnd">Explore our R&amp;D →</a>
+            </div>
+          </div>
+        </section>
+
+        <section className="process-section">
+          <div className="wrap">
+            <div className="section-head"><div><p className="eyebrow">HOW WE WORK</p><h2>Understand the workflow. Build the right system.</h2></div></div>
+            <div className="process">
+              <div className="process-step"><span>01</span><div><h3>Understand</h3><p>Map the problem, users, data, workflow and technical constraints before selecting the solution.</p></div></div>
+              <div className="process-step"><span>02</span><div><h3>Design</h3><p>Define the architecture, integrations and automation points needed to make the workflow reliable.</p></div></div>
+              <div className="process-step"><span>03</span><div><h3>Build</h3><p>Develop, configure and integrate the software with clear attention to maintainability and security.</p></div></div>
+              <div className="process-step"><span>04</span><div><h3>Improve</h3><p>Monitor real-world use, fix friction points and extend the system as requirements evolve.</p></div></div>
+            </div>
+          </div>
+        </section>
+
+        <section className="contact-section">
+          <div className="wrap contact-grid">
+            <div><p className="eyebrow">START A CONVERSATION</p><h2>Have a publishing, automation or AI/ML problem worth solving?</h2><p>Tell us what you are trying to build. We can discuss the workflow, technical requirements and a practical path forward.</p><a className="btn-primary" href="/contact">Contact Onyitech JournalHub</a></div>
+            <div className="contact-details"><div><span>EMAIL</span><a href="mailto:admin@onyitechub.com">admin@onyitechub.com</a></div><div><span>FOCUS</span>AI · ML · Publishing Technology · Workflow Automation</div><div><span>LOCATION</span>Nigeria · Serving research communities globally</div></div>
+          </div>
+        </section>
+      </main>
+      <SiteFooter />
+    </>
   );
 }
