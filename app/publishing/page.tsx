@@ -23,6 +23,14 @@ export default function PublishingPage() {
         <article><span>06</span><h3>Migration &amp; maintenance</h3><p>Move existing journals to improved infrastructure and keep publishing systems updated and operational.</p></article>
       </div>
     </div></section>
+    <section className="case-study"><div className="wrap case-grid">
+      <div><p className="eyebrow">SELECTED PROJECT</p><h2>Ojukwu Journal of Psychological Services</h2></div>
+      <div>
+        <p>We developed and support the digital publishing infrastructure for the Ojukwu Journal of Psychological Services (OJPS), an academic journal powered by Open Journal Systems.</p>
+        <p>Our technical work covers the journal platform, publishing workflows, article metadata, DOI and indexing-related technical support, and ongoing digital publishing infrastructure.</p>
+        <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit OJPS →</a>
+      </div>
+    </div></section>
     <section className="paper-panel"><div className="wrap two-column"><div><p className="eyebrow">OUR VIEW</p><h2>Editorial independence remains human.</h2></div><p>Technology should make publishing easier to operate without taking editorial authority away from editors, reviewers or scholarly institutions.</p></div></section>
     <section><div className="wrap cta-band"><div><p className="eyebrow">PUBLISHING PROJECT</p><h2>Starting a journal or improving an existing one?</h2></div><a className="btn-primary" href="/contact">Discuss your project</a></div></section>
   </main><SiteFooter /></>;
