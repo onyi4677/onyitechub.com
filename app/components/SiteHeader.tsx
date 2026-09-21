@@ -31,7 +31,7 @@ export default function SiteHeader() {
       <style dangerouslySetInnerHTML={{ __html: detailStyles }} />
       <header className="site-header">
         <div className="wrap header-inner">
-          <a className="wordmark" href="/">ONYTECH <span>JOURNALHUB</span></a>
+          <a className="wordmark" href="/">ONYITECH <span>JOURNALHUB</span></a>
           <nav className="site-nav" aria-label="Main navigation">
             <a href="/ai-ml">AI &amp; ML</a>
             <a href="/publishing">Publishing</a>
