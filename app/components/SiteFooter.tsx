@@ -6,7 +6,10 @@ export default function SiteFooter() {
           <strong>Onyitech JournalHub Ltd</strong>
           <p>AI, ML, publishing technology and workflow automation.</p>
         </div>
-        <div>© {new Date().getFullYear()} Onyitech JournalHub Ltd</div>
+        <div>
+          <p>© {new Date().getFullYear()} Onyitech JournalHub Ltd</p>
+          <a href="/privacy">Privacy Policy</a>
+        </div>
       </div>
     </footer>
   );
