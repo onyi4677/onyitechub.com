@@ -6,14 +6,15 @@ export const metadata: Metadata = {
   description: "Onyitech JournalHub Ltd builds AI/ML software, publishing infrastructure and workflow automation for research organizations, journals and modern teams.",
   keywords: ["AI company Nigeria","machine learning engineering","AI workflow automation","Python automation","academic publishing technology","OJS development","Open Journal Systems","journal hosting","editorial workflow automation","research technology","Onyitech JournalHub"],
   authors: [{ name: "Onyitech JournalHub Ltd" }],
-  metadataBase: new URL("https://onyitechub.com"),
+  metadataBase: new URL("https://www.onyitechub.com"),
+  alternates: { canonical: "/" },
   icons: {
     icon: "/icon.svg",
   },
   openGraph: {
     title: "Onyitech JournalHub Ltd | AI, ML & Publishing Technology",
     description: "AI/ML engineering, publishing infrastructure and workflow automation.",
-    url: "https://onyitechub.com",
+    url: "https://www.onyitechub.com",
     siteName: "Onyitech JournalHub Ltd",
     type: "website",
   },
