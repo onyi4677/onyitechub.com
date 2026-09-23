@@ -10,6 +10,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: baseUrl + "/ai-ml", lastModified },
     { url: baseUrl + "/automation", lastModified },
     { url: baseUrl + "/publishing", lastModified },
+    { url: baseUrl + "/case-studies/ojps", lastModified },
     { url: baseUrl + "/research-automation", lastModified },
     { url: baseUrl + "/rnd", lastModified },
     { url: baseUrl + "/solutions", lastModified },
