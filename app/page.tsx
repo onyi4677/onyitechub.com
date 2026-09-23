@@ -8,6 +8,8 @@ const capabilities = [
   ["04","Custom Solutions","Technology designed around the specific workflow, data and infrastructure of your organization.","/solutions"],
 ];
 
+export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
+
 export default function Home() {
   return (
     <>
