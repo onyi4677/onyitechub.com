@@ -5,6 +5,8 @@ export const metadata = { title: "Research Automation | Onyitech JournalHub Ltd"
 
 export const metadata = { title: "Research Automation | Onyitech JournalHub Ltd", description: "AI-assisted research workflow and scholarly communication technology in development.", alternates: { canonical: "/research-automation" }, openGraph: { url: "https://www.onyitechub.com/research-automation" } };
 
+export const metadata = { title: "Research Automation | Onyitech JournalHub Ltd", description: "AI-assisted research workflow and scholarly communication technology in development.", alternates: { canonical: "/research-automation" }, openGraph: { url: "https://www.onyitechub.com/research-automation" } };
+
 export default function ResearchAutomation() {
   return (
     <>
