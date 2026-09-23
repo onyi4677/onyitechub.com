@@ -12,6 +12,8 @@ export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "htt
 
 export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
 
+export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
+
 export default function Home() {
   return (
     <>
