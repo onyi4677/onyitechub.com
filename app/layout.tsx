@@ -20,6 +20,26 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Onyitech JournalHub Ltd",
+  url: "https://www.onyitechub.com",
+  logo: "https://www.onyitechub.com/icon.svg",
+  description: "AI/ML engineering, academic publishing technology and workflow automation for research organizations, journals and teams.",
+  email: "admin@onyitechub.com",
+};
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body>{children}</body></html>;
+  return (
+    <html lang="en">
+      <body>
+        {children}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+        />
+      </body>
+    </html>
+  );
 }
