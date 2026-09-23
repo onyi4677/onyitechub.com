@@ -1,3 +1,5 @@
+export const metadata = { title: "Privacy Policy | Onyitech JournalHub Ltd", description: "Privacy Policy for Onyitech JournalHub Ltd and its website.", alternates: { canonical: "/privacy" }, openGraph: { url: "https://www.onyitechub.com/privacy" } };
+
 export default function PrivacyPolicy() {
   return (
     <main>
