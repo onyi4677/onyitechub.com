@@ -4,6 +4,8 @@ import SiteFooter from "../components/SiteFooter";
 export const metadata = {
   title: "Publishing Technology | Onyitech JournalHub Ltd",
   description: "OJS development, journal infrastructure, metadata and publishing workflow technology.",
+  alternates: { canonical: "/publishing" },
+  openGraph: { url: "https://www.onyitechub.com/publishing" },
 };
 
 export default function PublishingPage() {
@@ -28,6 +30,7 @@ export default function PublishingPage() {
       <div>
         <p>We developed and support the digital publishing infrastructure for the Ojukwu Journal of Psychological Services (OJPS), an academic journal powered by Open Journal Systems.</p>
         <p>Our technical work covers the journal platform, publishing workflows, article metadata, DOI and indexing-related technical support, and ongoing digital publishing infrastructure.</p>
+        <a className="secondary-link" href="/case-studies/ojps">Read the OJPS case study →</a>
         <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit OJPS journal →</a>
         <a className="secondary-link" href="https://ojs.psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Open OJPS OJS platform →</a>
       </div>
