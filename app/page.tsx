@@ -8,11 +8,13 @@ const capabilities = [
   ["04","Custom Solutions","Technology designed around the specific workflow, data and infrastructure of your organization.","/solutions"],
 ];
 
-export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
 
-export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
 
-export const metadata = { alternates: { canonical: "/" }, openGraph: { url: "https://www.onyitechub.com/" } };
+
+export const metadata = {
+  alternates: { canonical: "/" },
+  openGraph: { url: "https://www.onyitechub.com/" },
+};
 
 export default function Home() {
   return (
@@ -97,6 +99,7 @@ export default function Home() {
             <div>
               <p>We developed and support the digital publishing infrastructure for the <strong>Ojukwu Journal of Psychological Services (OJPS)</strong>, an academic journal using Open Journal Systems.</p>
               <p>The work includes journal platform development and maintenance, publishing workflows, article metadata, DOI and indexing-related technical support, and the digital infrastructure required for ongoing scholarly publication.</p>
+              <a className="secondary-link" href="/case-studies/ojps">Read the OJPS case study →</a>
               <a className="secondary-link" href="https://psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Visit journal →</a>
               <a className="secondary-link" href="https://ojs.psyservicesjournal.org.ng" target="_blank" rel="noreferrer">Open OJS platform →</a>
             </div>
