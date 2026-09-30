@@ -2,14 +2,12 @@ import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
 
 const capabilities = [
-  ["01","AI & Machine Learning","Practical AI/ML systems for research, text intelligence, data pipelines and decision-support workflows.","/ai-ml"],
-  ["02","Publishing Technology","OJS development, journal hosting, metadata, DOI workflows and technical publishing infrastructure.","/publishing"],
-  ["03","Workflow Automation","Python, APIs and automation that connect repetitive operational processes into dependable software.","/automation"],
-  ["04","Custom Solutions","Technology designed around the specific workflow, data and infrastructure of your organization.","/solutions"],
+  ["01","Research Workspace","Plan, organize and develop research projects with AI-assisted research planning and manuscript development.","/ai-ml"],
+  ["02","Research Data Collection","Design questionnaires and collect real-world responses from target populations. Coming soon.","/solutions"],
+  ["03","Research Intelligence","Transform research data into statistical insights, machine-learning models and decision-support outputs. Coming soon.","/ai-ml"],
+  ["04","Academic Publishing Infrastructure","OJS development, journal hosting, metadata, DOI workflows and technical publishing infrastructure.","/publishing"],
+  ["05","Custom Research Solutions","Build research portals, data systems and specialized software for universities, organizations and companies.","/solutions"],
 ];
-
-
-
 
 export const metadata = {
   alternates: { canonical: "/" },
@@ -24,42 +22,42 @@ export default function Home() {
         <section className="hero">
           <div className="wrap hero-grid">
             <div>
-              <p className="eyebrow">AI · ML · PUBLISHING · AUTOMATION</p>
-              <h1>Intelligent technology for research and real-world workflows.</h1>
-              <p className="lede">Onyitech JournalHub Ltd builds AI/ML software, publishing infrastructure and workflow automation for journals, research organizations and teams that need practical digital systems.</p>
+              <p className="eyebrow">RESEARCH · DATA · AI · PUBLISHING</p>
+              <h1>Research technology for the complete research lifecycle.</h1>
+              <p className="lede">Onyitech JournalHub Ltd builds research technology, data workflows, AI/ML systems and publishing infrastructure for researchers, institutions, organizations and companies.</p>
               <div className="cta-row">
                 <a className="btn-primary" href="/contact">Start a project</a>
                 <a className="secondary-link" href="/solutions">Explore solutions →</a>
               </div>
             </div>
             <div className="hero-card">
-              <p className="card-label">OUR TECHNOLOGY STACK</p>
-              <h2>Software that connects intelligence with operations.</h2>
+              <p className="card-label">RESEARCH LIFECYCLE</p>
+              <h2>Connecting research ideas to data, intelligence and publication.</h2>
               <div className="workflow">
-                <div><span>01</span><strong>AI / ML</strong></div>
-                <div><span>02</span><strong>Python &amp; APIs</strong></div>
-                <div><span>03</span><strong>Publishing Systems</strong></div>
-                <div><span>04</span><strong>Automation</strong></div>
-                <div><span>05</span><strong>Cloud Infrastructure</strong></div>
+                <div><span>01</span><strong>Research Ideas</strong></div>
+                <div><span>02</span><strong>Projects &amp; Design</strong></div>
+                <div><span>03</span><strong>Data Collection</strong></div>
+                <div><span>04</span><strong>Analysis &amp; Intelligence</strong></div>
+                <div><span>05</span><strong>Publication &amp; Reporting</strong></div>
               </div>
-              <p className="card-footer">Built to support people and workflows — not replace human responsibility.</p>
+              <p className="card-footer">Technology supports researchers and organizations while keeping human responsibility at the centre.</p>
             </div>
           </div>
         </section>
 
         <section className="intro">
           <div className="wrap intro-grid">
-            <div><p className="eyebrow">WHAT WE DO</p><h2>Where AI engineering meets publishing technology.</h2></div>
+            <div><p className="eyebrow">WHAT WE DO</p><h2>Where research, data and intelligent technology come together.</h2></div>
             <div>
-              <p>We develop software at the intersection of machine learning, automation and scholarly communication. Our publishing work includes OJS platforms and journal infrastructure, while our engineering work extends to Python applications, APIs, data workflows and intelligent systems.</p>
-              <p>The result is technology built around a real operational problem: a journal that needs better infrastructure, a team that needs automation, or an organization that needs an AI-enabled workflow.</p>
+              <p>We develop technology across the research lifecycle — from research planning and data collection to analysis, intelligent workflows and scholarly publication.</p>
+              <p>Our work serves academic researchers and publishers as well as organizations and companies that need reliable ways to collect evidence, understand data and improve real-world decisions.</p>
             </div>
           </div>
         </section>
 
         <section id="services">
           <div className="wrap">
-            <div className="section-head"><div><p className="eyebrow">CAPABILITIES</p><h2>Four areas, one engineering approach.</h2></div><p className="section-note">01 — 04</p></div>
+            <div className="section-head"><div><p className="eyebrow">PRODUCTS &amp; SERVICES</p><h2>Research technology built around real workflows.</h2></div><p className="section-note">01 — 05</p></div>
             <div className="services-grid">
               {capabilities.map(([number,title,description,href]) => (
                 <a className="service-card service-link-card" href={href} key={number}>
@@ -74,10 +72,11 @@ export default function Home() {
           <div className="wrap">
             <div className="section-head"><div><p className="eyebrow">WHO WE SERVE</p><h2>Technology for research-driven organizations.</h2></div></div>
             <div className="audience-grid">
+              <article className="audience-card"><h3>Researchers &amp; Research Groups</h3><p>Tools for research planning, project development, data workflows, analysis and publication preparation.</p></article>
+              <article className="audience-card"><h3>Universities &amp; Research Centres</h3><p>Digital infrastructure, research systems and automation for departments, faculties and scholarly communities.</p></article>
               <article className="audience-card"><h3>Journal Publishers</h3><p>OJS platforms, editorial workflows, metadata, hosting and technical publishing support.</p></article>
-              <article className="audience-card"><h3>Universities &amp; Research Centres</h3><p>Digital infrastructure and automation for departments, faculties and scholarly communities.</p></article>
-              <article className="audience-card"><h3>Editorial Teams</h3><p>Tools that reduce repetitive coordination while keeping editorial decisions with people.</p></article>
-              <article className="audience-card"><h3>Organizations</h3><p>Python, API and AI/ML solutions for structured operational and research workflows.</p></article>
+              <article className="audience-card"><h3>NGOs &amp; Organizations</h3><p>Evidence collection, research workflows, data systems and technology designed around operational needs.</p></article>
+              <article className="audience-card"><h3>Companies &amp; Brands</h3><p>Market and customer research workflows for understanding products, customers, demand and brand perception.</p></article>
             </div>
           </div>
         </section>
@@ -120,8 +119,8 @@ export default function Home() {
 
         <section className="contact-section">
           <div className="wrap contact-grid">
-            <div><p className="eyebrow">START A CONVERSATION</p><h2>Have a publishing, automation or AI/ML problem worth solving?</h2><p>Tell us what you are trying to build. We can discuss the workflow, technical requirements and a practical path forward.</p><a className="btn-primary" href="/contact">Contact Onyitech JournalHub</a></div>
-            <div className="contact-details"><div><span>EMAIL</span><a href="mailto:admin@onyitechub.com">admin@onyitechub.com</a></div><div><span>FOCUS</span>AI · ML · Publishing Technology · Workflow Automation</div><div><span>LOCATION</span>Nigeria · Serving research communities globally</div></div>
+            <div><p className="eyebrow">START A CONVERSATION</p><h2>Have a research, data, publishing or AI/ML problem worth solving?</h2><p>Tell us what you are trying to build. We can discuss the research question, workflow, technical requirements and a practical path forward.</p><a className="btn-primary" href="/contact">Contact Onyitech JournalHub</a></div>
+            <div className="contact-details"><div><span>EMAIL</span><a href="mailto:admin@onyitechub.com">admin@onyitechub.com</a></div><div><span>FOCUS</span>Research Technology · Data · AI/ML · Publishing Infrastructure</div><div><span>LOCATION</span>Nigeria · Serving research communities and organizations globally</div></div>
           </div>
         </section>
       </main>
