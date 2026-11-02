@@ -12,6 +12,7 @@ const detailStyles = `
 .feature-grid span{display:block;margin-bottom:42px;color:var(--oxblood);font-family:var(--font-mono);font-size:.75rem}
 .dark-panel{background:var(--paper-dark);color:#fff}
 .dark-panel h2{max-width:800px;margin:0 0 20px;font-family:var(--font-serif);font-size:clamp(2rem,4vw,3.4rem);line-height:1.08}
+.dark-panel h3{margin:0 0 12px;font-family:var(--font-serif);font-size:1.45rem;color:#fff}
 .dark-panel .eyebrow{color:#a9c8d0}
 .dark-panel p{max-width:760px;color:#c8d0d5}
 .paper-panel{background:var(--paper-raised)}
@@ -21,8 +22,20 @@ const detailStyles = `
 .service-link-card{text-decoration:none;color:inherit;position:relative}
 .service-link-card:hover{color:inherit}
 .card-arrow{display:block;margin-top:24px;color:var(--oxblood);font-size:.85rem;font-weight:600}
+.availability-note{margin:22px 0 0;color:var(--ink-soft);font-size:.88rem;max-width:780px}
+.pricing-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.price-card{display:flex;flex-direction:column;align-items:flex-start;gap:12px;border:1px solid var(--rule);background:var(--paper);padding:30px}
+.price-card h3{margin:0;font-family:var(--font-serif);font-size:1.45rem}
+.price-card p{margin:0;color:var(--ink-soft);font-size:.94rem}
+.price-card .price-value{color:var(--oxblood);font-size:1.45rem;font-weight:700;letter-spacing:-.02em}
+.price-card .price-audience{color:var(--ink);font-weight:600}
+.price-card .secondary-link{margin-top:auto;padding-top:14px}
+.price-card-featured{border:2px solid var(--teal);background:#fff}
+.price-badge{color:var(--teal)!important;font-family:var(--font-mono);font-size:.7rem!important;font-weight:700;letter-spacing:.08em}
+.pricing-disclaimer{max-width:900px;margin:28px 0 0;color:var(--ink-soft);font-size:.86rem}
+.cta-stack{display:flex;flex-direction:column;align-items:flex-start;gap:16px;min-width:240px}
 @media(max-width:900px){.two-column{grid-template-columns:1fr;gap:50px}.feature-grid{grid-template-columns:repeat(2,1fr)}.cta-band{align-items:flex-start;flex-direction:column}}
-@media(max-width:650px){.detail-page .detail-hero{padding:70px 0}.feature-grid{grid-template-columns:1fr}}
+@media(max-width:650px){.detail-page .detail-hero{padding:70px 0}.feature-grid,.pricing-grid{grid-template-columns:1fr}}
 `;
 
 export default function SiteHeader() {
@@ -34,6 +47,7 @@ export default function SiteHeader() {
           <a className="brand-logo-link" href="/" aria-label="Onyitech JournalHub home"><img className="brand-logo" src="/onyitech-logo.svg" alt="Onyitech JournalHub" /></a>
           <nav className="site-nav" aria-label="Main navigation">
             <a href="/ai-ml">AI &amp; ML</a>
+            <a href="/research-development">Research</a>
             <a href="/publishing">Publishing</a>
             <a href="/automation">Automation</a>
             <a href="/solutions">Solutions</a>
