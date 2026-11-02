@@ -225,7 +225,7 @@ export default function ResearchDevelopmentPage() {
             </div>
             <div className="cta-stack">
               <a className="btn-primary" href="/contact">Request a consultation</a>
-              <a className="secondary-link" href="https://wa.me/2347061024839">Chat on WhatsApp →</a>
+              <a className="secondary-link" href="https://wa.me/2349110161537">Chat on WhatsApp →</a>
               <a className="secondary-link" href="mailto:admin@onyitechub.com">admin@onyitechub.com</a>
             </div>
           </div>
