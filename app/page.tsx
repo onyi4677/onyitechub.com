@@ -2,11 +2,14 @@ import SiteHeader from "./components/SiteHeader";
 import SiteFooter from "./components/SiteFooter";
 
 const capabilities = [
-  ["01","Research Workspace","Plan, organize and develop research projects with AI-assisted research planning and manuscript development.","/ai-ml"],
-  ["02","Research Data Collection","Design questionnaires and collect real-world responses from target populations. Coming soon.","/solutions"],
-  ["03","Research Intelligence","Transform research data into statistical insights, machine-learning models and decision-support outputs. Coming soon.","/ai-ml"],
-  ["04","Academic Publishing Infrastructure","OJS development, journal hosting, metadata, DOI workflows and technical publishing infrastructure.","/publishing"],
-  ["05","Custom Research Solutions","Build research portals, data systems and specialized software for universities, organizations and companies.","/solutions"],
+  ["01","Onyitech Research Workspace","A connected environment for research planning, project development and a growing set of research workflow tools.","/ai-ml"],
+  ["02","Research Instrument Hosting & Data Collection","Develop and host online research instruments, with structured response collection and submission-management workflows.","/solutions"],
+  ["03","Manuscript Integrity & Citation Screening","Advisory screening for manuscript structure, citation–reference matching, DOI and URL checks, and research-document completeness.","/solutions"],
+  ["04","Academic Journal Development & OJS","Journal websites, Open Journal Systems deployment, hosting, upgrades, technical maintenance and editorial workflow configuration.","/publishing"],
+  ["05","DOI & Scholarly Metadata Support","Structured article metadata preparation, DOI workflow support and scholarly publishing metadata management.","/publishing"],
+  ["06","International Publishing Support","Coordination of publisher invoices and eligible international payment arrangements for authors and research clients.","/publishing"],
+  ["07","Research Data & Intelligence","Research data workflows, statistical analysis support, machine-learning exploration and decision-support systems.","/ai-ml"],
+  ["08","Custom Software & Automation","Purpose-built research portals, APIs, data systems and workflow automation for institutions and organizations.","/solutions"],
 ];
 
 export const metadata = {
@@ -24,7 +27,7 @@ export default function Home() {
             <div>
               <p className="eyebrow">RESEARCH · DATA · AI · PUBLISHING</p>
               <h1>Research technology for the complete research lifecycle.</h1>
-              <p className="lede">Onyitech JournalHub Ltd builds research technology, data workflows, AI/ML systems and publishing infrastructure for researchers, institutions, organizations and companies.</p>
+              <p className="lede">Onyitech JournalHub Ltd develops research technology and academic publishing infrastructure. We support researchers, journal owners, universities and organizations with research workspace tools, online instruments, manuscript screening, journal systems, scholarly metadata and publishing coordination.</p>
               <div className="cta-row">
                 <a className="btn-primary" href="/contact">Start a project</a>
                 <a className="secondary-link" href="/solutions">Explore solutions →</a>
@@ -47,17 +50,17 @@ export default function Home() {
 
         <section className="intro">
           <div className="wrap intro-grid">
-            <div><p className="eyebrow">WHAT WE DO</p><h2>Where research, data and intelligent technology come together.</h2></div>
+            <div><p className="eyebrow">WHAT WE DO</p><h2>Technology for research, scholarly publishing and evidence-led work.</h2></div>
             <div>
-              <p>We develop technology across the research lifecycle — from research planning and data collection to analysis, intelligent workflows and scholarly publication.</p>
-              <p>Our work serves academic researchers and publishers as well as organizations and companies that need reliable ways to collect evidence, understand data and improve real-world decisions.</p>
+              <p>We work across the research and publishing lifecycle — from project planning and online instrument hosting to manuscript integrity screening, journal infrastructure, scholarly metadata and publication support.</p>
+              <p>Our services combine practical technical delivery with software development. We distinguish operational services from platform capabilities that are still being developed or rolled out.</p>
             </div>
           </div>
         </section>
 
         <section id="services">
           <div className="wrap">
-            <div className="section-head"><div><p className="eyebrow">PRODUCTS &amp; SERVICES</p><h2>Research technology built around real workflows.</h2></div><p className="section-note">01 — 05</p></div>
+            <div className="section-head"><div><p className="eyebrow">PRODUCTS &amp; SERVICES</p><h2>Research and publishing services built around real workflows.</h2></div><p className="section-note">01 — 08</p></div>
             <div className="services-grid">
               {capabilities.map(([number,title,description,href]) => (
                 <a className="service-card service-link-card" href={href} key={number}>
@@ -65,6 +68,7 @@ export default function Home() {
                 </a>
               ))}
             </div>
+            <p className="availability-note">Workspace modules and advanced data-collection or analytics capabilities are being introduced in stages. Manuscript screening reports are advisory tools; they do not establish plagiarism, research misconduct or guaranteed publication outcomes.</p>
           </div>
         </section>
 
@@ -77,6 +81,7 @@ export default function Home() {
               <article className="audience-card"><h3>Journal Publishers</h3><p>OJS platforms, editorial workflows, metadata, hosting and technical publishing support.</p></article>
               <article className="audience-card"><h3>NGOs &amp; Organizations</h3><p>Evidence collection, research workflows, data systems and technology designed around operational needs.</p></article>
               <article className="audience-card"><h3>Companies &amp; Brands</h3><p>Market and customer research workflows for understanding products, customers, demand and brand perception.</p></article>
+              <article className="audience-card"><h3>Authors &amp; Research Consultants</h3><p>Practical support with publisher invoices, publication administration and eligible international payment coordination.</p></article>
             </div>
           </div>
         </section>
@@ -119,8 +124,8 @@ export default function Home() {
 
         <section className="contact-section">
           <div className="wrap contact-grid">
-            <div><p className="eyebrow">START A CONVERSATION</p><h2>Have a research, data, publishing or AI/ML problem worth solving?</h2><p>Tell us what you are trying to build. We can discuss the research question, workflow, technical requirements and a practical path forward.</p><a className="btn-primary" href="/contact">Contact Onyitech JournalHub</a></div>
-            <div className="contact-details"><div><span>EMAIL</span><a href="mailto:admin@onyitechub.com">admin@onyitechub.com</a></div><div><span>FOCUS</span>Research Technology · Data · AI/ML · Publishing Infrastructure</div><div><span>LOCATION</span>Nigeria · Serving research communities and organizations globally</div></div>
+            <div><p className="eyebrow">START A CONVERSATION</p><h2>Need help with a research, journal or international publishing workflow?</h2><p>Tell us what you are trying to achieve. We can discuss the service, documentation, publisher requirements and a practical, compliant way forward.</p><a className="btn-primary" href="/contact">Contact Onyitech JournalHub</a></div>
+            <div className="contact-details"><div><span>EMAIL</span><a href="mailto:admin@onyitechub.com">admin@onyitechub.com</a></div><div><span>FOCUS</span>Research Technology · Journal Infrastructure · Manuscript Screening · Publishing Support</div><div><span>LOCATION</span>Nigeria · Serving research communities and organizations globally</div></div>
           </div>
         </section>
       </main>
